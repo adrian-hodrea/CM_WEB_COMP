@@ -1,0 +1,136 @@
+:root {
+    --font-color-blue: #25b9ec;
+    --font-color-black: #444343;
+    --default-color: #0B0A0A;
+    --main-color: #4abff1;
+    --from-gradient-body-color: #80c4e7;
+    --to-gradient-body-color: #2b607e;
+    --icon-color: #a9de35;
+    --menu-color: #e5e8ed;
+    --mainMenu-hover-color: #ffffff;
+    --subMenu-hover-color: #bcc8cf;
+    --tr-hover-color: #d6ebf6;
+    --edit-row-color: #fce1b7;
+    --required-field-color: rgba(240,128,128,0.4);
+    --menuItemTypeM-color: #b758ce;
+    --menuItemTypeF-color: #2e7ea3;
+    --menuItemTypeR-color: #06942a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+input, select {
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#backgroundAppBrand {
+    margin: 64px;
+    font-size: 512px;
+    font-family: 'Tangerine', cursive;
+    color: rgb(68, 67, 67, 0.1);
+    text-align: center;
+}
+
+a, a:focus, a:hover, a:active, a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+/* ---------- Containers ------------ */
+
+.doc__wrapper {
+    background-image: linear-gradient(to bottom right, var(--from-gradient-body-color), var(--to-gradient-body-color));
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page__justify__align {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.page__body__wrapper {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__body__content {
+    width: 100%;
+    position: absolute;
+    top: 0;;
+    left: 0;
+}
+
+/* Modal Info message styles */ 
+
+.modalDialog { 
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-35%); 
+    width: 360px;
+    padding: 46px 26px;
+    font-family: var(--main-font);
+    font-weight: 800;
+    color: var(--font-color-black);
+    background-color: white;
+    border: 1px solid var(--font-color-black);
+    border-radius: 3px;
+    box-shadow: 5px 5px var(--font-color-black);
+}
+
+.modalDialog p {
+    font-size: 14px;
+    color: red;
+}
+
+.modalDialog > div > div {
+    text-align: center;
+}
+
+.modalDialog input[type="button"]  {
+    width: 40%;
+    margin: 0 8px;
+    background-color: var(--to-gradient-body-color);
+    color: #ffffbb;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;    
+    padding: 10px;
+}
+
+.modalDialog input[type="button"]:hover  {
+    background-color: transparent;
+    color: var(--to-gradient-body-color);  
+    border: 2px solid var(--to-gradient-body-color);
+    font-weight: 500;
+} 
+

@@ -1,0 +1,20 @@
+/* general paintings for buttons */
+
+.btnPainting {
+    background-color: var(--to-gradient-body-color);
+    border: 2px solid var(--to-gradient-body-color);
+}
+
+.btnPainting:hover {
+    background-color: #3481ab;
+    cursor: pointer;
+}
+
+.btnIconPainting {
+    color: var(--icon-color);
+}
+
+.btnTextPainting {
+    color: #afdaf3;
+}
+

@@ -1,0 +1,90 @@
+.tableContainer {
+    width: 90%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.display_table {
+    width: 100%;
+    color: var(--font-color-black);
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+.display_table caption {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.display_table_body {
+    background-color: azure;
+}
+
+.display_table_body .table_head th, .display_table_body tr td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2px;
+}
+
+.display_table_body .table_head th {
+    text-align: center;
+    background-color: #DCDCDC;
+    font-weight: bold;
+}
+
+tr:hover:not(:first-child) {
+    background-color: var(--tr-hover-color);
+}
+
+/* --------- Action Buttons styles  ---------- */
+
+.editRowBtn, .deleteRowBtn, .saveChangesBtn {
+    width: 68px;
+    display: inline-block;
+    padding: 5px 7px;
+    border-radius: 3px;
+    margin: 0 2px 0 0;
+    text-align: center;
+}
+
+.saveChangesBtn {
+    background-color: #5ec268
+}
+
+.saveChangesBtn:hover {
+    cursor: pointer;
+    background-color: #43ac6a
+}
+
+.editRowBtn {
+    background-color: #f6af4d
+}
+
+.editRowBtn:hover {
+    cursor: pointer;
+    background-color: #ec971f;
+}
+
+.cancelEditRowBtn {
+    background-color: #798891;
+}
+
+.cancelEditRowBtn:hover {
+    background-color: #49606b;
+}
+
+.deleteRowBtn {
+    background-color: #f98978;
+}
+
+.deleteRowBtn:hover {
+    cursor: pointer;
+    background-color: #d9534f;
+}
+
+.editRowBtn>span, .deleteRowBtn>span, .saveChangesBtn>span, i {
+    color: white;
+}
