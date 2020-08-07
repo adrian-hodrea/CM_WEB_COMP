@@ -21,13 +21,13 @@ function initialize() {
 	
     app.use(cors());
 
-    app.use('/controllers',express.static('../frontend/controllers'));
-    app.use('/assets',express.static('../frontend/assets'));
-    app.use('/components',express.static('../frontend/components'));
-    app.use('/ownmodules',express.static('../frontend/ownmodules'));
-    app.use('/models',express.static('../frontend/models'));
+    app.use('/controllers',express.static('../frontend_vanilla/controllers'));
+    app.use('/assets',express.static('../frontend_vanilla/assets'));
+    app.use('/components',express.static('../frontend_vanilla/components'));
+    app.use('/ownmodules',express.static('../frontend_vanilla/ownmodules'));
+    app.use('/models',express.static('../frontend_vanilla/models'));
 
-    app.use('/frontend',express.static('../frontend'));
+    app.use('/frontend',express.static('../frontend_vanilla'));
 
   
    

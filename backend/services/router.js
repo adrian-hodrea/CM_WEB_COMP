@@ -14,7 +14,10 @@ const medicCtrl = require('../controllers/medicCtrl.js');
 
 
 router.route('/')
-  .get(root.get);
+  .get(root.getVanilla);
+
+router.route('/ng')
+  .get(root.getAngular);
 
 /* rute Persoane */
 router.route('/persoane')
