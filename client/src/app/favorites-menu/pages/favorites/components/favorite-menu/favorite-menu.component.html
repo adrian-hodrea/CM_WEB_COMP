@@ -1,0 +1,11 @@
+<div class="FavoriteBtnsGroup">
+    <div class="btnPainting favBtnGroupHeaderLayout">
+        <i class="btnIconPainting {{favoritesMenu.icon}}"></i>
+        <span class="btnTextPainting">{{favoritesMenu.titlu}}</span>
+    </div>
+    <div id="btnGrBody" class="favBtnGroupBodyLayout">
+        <app-favorite-btn *ngFor="let button of favoritesMenu.buttons" [btn]=button>
+
+        </app-favorite-btn>
+    </div>
+</div>   

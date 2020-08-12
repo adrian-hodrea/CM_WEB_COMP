@@ -1,0 +1,18 @@
+.FavoriteBtnsGroup {
+    float: left;
+    width: 20%;
+    box-sizing: border-box; 
+    margin:25px;
+    background-color: rgba(0,0,0,0.1);;
+}
+.favBtnGroupHeaderLayout {
+        padding: 8px;
+        text-align: center;
+        font-size: 24px;
+}
+.favBtnGroupBodyLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
